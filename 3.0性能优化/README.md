@@ -8,3 +8,8 @@
 babel7已弃用@babel/polyfill，可以使用@babel/plugin-transform-runtime和@babel/runtime替代，性能提升了
 
 热更新  https://www.webpackjs.com/guides/hot-module-replacement/
+
+
+,
+    "lodash",
+    ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": true }]

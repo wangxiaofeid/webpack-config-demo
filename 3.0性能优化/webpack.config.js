@@ -88,6 +88,9 @@ if (devMode) {
         })
      ]
     },
+    resolve: {
+      mainFields: ['main']
+    },
     plugins: [
       new MiniCssExtractPlugin({
         filename: "css/[name].css",
@@ -104,12 +107,12 @@ if (devMode) {
           canPrint: false
         }
       }),
-      new webpack.ContextReplacementPlugin(
-        /moment[\/\\]locale$/,
-        /zh-en|en-us/
-      ),
-      new BundleAnalyzerPlugin(),
-      new LodashModuleReplacementPlugin()
+      // new webpack.ContextReplacementPlugin(
+      //   /moment[\/\\]locale$/,
+      //   /zh-en|en-us/
+      // ),
+      // new LodashModuleReplacementPlugin(),
+      new BundleAnalyzerPlugin()
     ]
   })
 }
