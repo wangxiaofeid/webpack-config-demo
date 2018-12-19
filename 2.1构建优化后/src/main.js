@@ -8,7 +8,7 @@ import stores from "./stores"
 
 const MOUNT_NODE = document.getElementById('app');
 
-ReactDOM.render(
+ReactDOM.render( 
   <Provider {...stores}>
     <Router>
       <App/>

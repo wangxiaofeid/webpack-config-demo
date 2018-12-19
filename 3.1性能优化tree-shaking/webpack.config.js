@@ -32,6 +32,6 @@ module.exports = {
       inject: true
     }),
     new BundleAnalyzerPlugin(),
-    new WebpackDeepScopeAnalysisPlugin()
+    // new WebpackDeepScopeAnalysisPlugin()
   ]
 }

@@ -10,7 +10,7 @@ const { Header, Footer, Sider, Content } = Layout;
 const { SubMenu } = Menu;
 
 @withRouter
-@inject('appStore')
+@inject('appStore') 
 @observer
 export default class App extends Component {
   state = {

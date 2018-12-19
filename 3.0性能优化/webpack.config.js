@@ -107,11 +107,11 @@ if (devMode) {
           canPrint: false
         }
       }),
-      // new webpack.ContextReplacementPlugin(
-      //   /moment[\/\\]locale$/,
-      //   /zh-en|en-us/
-      // ),
-      // new LodashModuleReplacementPlugin(),
+      new webpack.ContextReplacementPlugin(
+        /moment[\/\\]locale$/,
+        /zh-en|en-us/
+      ),
+      new LodashModuleReplacementPlugin(),
       new BundleAnalyzerPlugin()
     ]
   })
